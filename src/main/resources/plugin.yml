@@ -1,0 +1,37 @@
+name: AntiMobGrief
+main: io.github.wolfstorm.antimobgrief.AntiMobGriefPlugin
+version: 1.20.x-0
+api-version: "1.13"
+author: Wolfstorm
+description: A simple, compact, configurable AntiMobGrief Plugin
+
+commands:
+  ase:
+    description: Allows access to the AntiMobGrief Commands
+    usage: /<command> ? - list subcommands
+    aliases: [amg, amgrief, antimobgrief]
+    permission: amg.basic
+    permission-message: "You are lacking the permission node 'amg.basic'"
+
+permissions:
+  amg.*:
+    description: All AntiMobGrief Commands
+    default: op
+    children:
+      amg.basic: true
+      amg.reload: true
+      amg.update: true
+      amg.listgrief: true
+
+  amg.basic:
+    description: Allows access to basic things - Getting Version of the Plugin. Keep this true otherwise this will break everything.
+    default: true
+  amg.update:
+    description: Allows the checking for updates.
+    default: false
+  amg.reload:
+    description: Allows Reloading of the AntiMobGrief Config.
+    default: false
+  amg.listgrief:
+    description: Allows the listing of the AntiMobGrief statuses.
+    default: false

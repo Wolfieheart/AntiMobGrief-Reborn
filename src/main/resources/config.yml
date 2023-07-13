@@ -1,0 +1,29 @@
+#-----------------------------#
+#    AntiMobGrief-Revived     #
+#-----------------------------#
+
+#DO NOT CHANGE THIS - CHANGES AUTOMATICALLY PER UPDATE
+version: "1.20.x-0"
+
+#----------- UPDATE NOTIFICATIONS
+#Enable or Disable the Update Checker
+runTheUpdateChecker: true
+
+# When runTheUpdateChecker is true, we will also check every X hours
+check-interval: 24
+
+#Set this to allow your operators to get messages in game w.r.t Plugin updates
+opUpdateNotification: false
+
+#----------- MOB GRIEFING OPTIONS
+#Toggle for these is true/false
+# true  - Griefing of Items is allowed
+# false - Griefing will be BLOCKED!
+griefSettings:
+  allowCreeperGrief: true
+  allowEndermanGrief: true
+  allowGhastGrief: true
+  allowDoorGrief: true
+  allowRavagerGrief: true
+
+
